@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+a{
+    color: black;
+}
+nav img{
+    width: 211px;
+    height: 63px;
+}
+
+.top{
+    background-image: url(./img/top.jpg);
+    height: 400px;
+    background-size: cover;
+}
+
+dl{
+    margin: 0 auto;
+    padding:30px;
+    width:600px;
+}
+
+dt {
+    float: left ;
+    clear: left ;
+    margin-right: 4em ;
+    width: 120px ;
+}
+
+dd {
+    float: left ;
+    margin-left: 1em ;
+}
+
+.clear::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+
+.about img{
+    width: 430px;
+    height: 325px;
+
+}
+
+.contact{
+    background-image: url(./img/contact.jpg);
+    height: 400px;
+    background-size: cover;
+}
