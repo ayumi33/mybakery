@@ -1,51 +1,100 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'moon';
+    src: url(./fonts/Moon2.0-Regular.otf);
+  }
+
+@font-face{
+    font-family: 'notosansjp';
+    src: url(./fonts2/NotoSansJP-Regular.otf);
+}
+
+  
+/* all */
+body {
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: #546e7a;
+    
+}
+h2{
+    letter-spacing: 0.2em;
+    font-family: 'moon' ;
+    color: #F6AD47;
+}
 a{
-    color: black;
+    color: #546e7a;
+}
+
+p{
+    font-family: 'notosansjp';
+}
+
+/* nav */
+nav{
+    font-family: 'moon' ;
 }
 nav img{
     width: 211px;
     height: 63px;
 }
 
+/* .top */
 .top{
     background-image: url(./img/top.jpg);
     height: 400px;
     background-size: cover;
 }
 
-dl{
-    margin: 0 auto;
-    padding:30px;
-    width:600px;
+.top h2{
+    color: #6b3131;
 }
 
-dt {
-    float: left ;
-    clear: left ;
-    margin-right: 4em ;
-    width: 120px ;
+
+/* shop */
+iframe{
+    width: 100%;
 }
 
-dd {
-    float: left ;
-    margin-left: 1em ;
-}
-
-.clear::after{
-    content:"";
-    clear: both;
-    display: block;
-}
-
-.about img{
-    width: 430px;
-    height: 325px;
-
-}
-
+/* .contact */
 .contact{
     background-image: url(./img/contact.jpg);
-    height: 400px;
+    height: 550px;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.192);
+    background-blend-mode: soft-light;
 }
+
+ form div{
+     margin-bottom: 14px;
+ }
+
+ label{
+     font-size: 1.125rem;
+     margin-bottom: 10px;
+     display: block;
+ }
+
+ input[type="text"],
+ input[type="email"],
+ textarea{
+     background: rgba(255,255,255,.5);
+     border: 1px #fff solid;
+     border-radius: 5px;
+     padding: 10px;
+     font-size: 1rem;
+ }
+
+ input[type="text"],
+ input[type="email"]{
+     width: 100%;
+     max-width: 240px;
+ }
+
+ textarea{
+     width: 100%;
+     max-width: 480px;
+     height: 6rem;
+ }
+ input[type="submit"]
